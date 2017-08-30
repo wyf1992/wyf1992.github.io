@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>111</title>
+</head>
+<body>
+<form>
+输入：<input type="text" name="average" id="number"><br>
+<input type="button" value="输出" onclick="calc()">
+<p id="a"></p>
+</form>
+<script>
+function calc(){
+  var num=parseFloat(document.getElementById("number").value);
+  var a,b,c,d,e;
+  do {
+  a=(Math.random()*2+num-1).toFixed(1);
+  b=(Math.random()*2+num-1).toFixed(1);
+  c=(Math.random()*2+num-1).toFixed(1);
+  d=(Math.random()*2+num-1).toFixed(1);
+  e=(5*num-a-b-c-d).toFixed(1);
+  } while (e<=num-1||e>=num+1);
+  var n=document.getElementById("a");
+  n.innerHTML=a+"<br>"+b+"<br>"+c+"<br>"+d+"<br>"+e;
+}
+</script>
+</body>
+</html>
