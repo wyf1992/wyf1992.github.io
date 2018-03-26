@@ -342,6 +342,19 @@ var up = document.getElementsByClassName('up')[0];
         right.ontouchstart = function(){if (headNode.value != 37 || allNode.length <= 0) {
                     headNode.value = 39;
                 }};
+		
+          up.onclick = function(){if (headNode.value != 40 || allNode.length <= 0) {
+                    headNode.value = 38;
+                }};
+        down.onclick = function(){if (headNode.value != 38 || allNode.length <= 0) {
+                    headNode.value = 40;
+                }};
+        left.onclick = function(){if (headNode.value != 39 || allNode.length <= 0) {
+                    headNode.value = 37;
+                }};
+        right.onclick = function(){if (headNode.value != 37 || allNode.length <= 0) {
+                    headNode.value = 39;
+                }};
 				var game = setInterval(move,1000);
 				pause.onclick = function(){lock = false;};
 				start.onclick = function(){lock = true;};
