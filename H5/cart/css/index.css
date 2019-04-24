@@ -1,4 +1,4 @@
-.go	{
+/*.go	{
 	position: fixed;
 	top: 4%;
 	right: 4%;
@@ -17,5 +17,21 @@
 	right: 6%;
 	bottom: 10%;
 	width: 15%;
+	z-index: 9999;
+}*/
+.go {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	width: 101px;
+	height: 101px;
+	z-index: 9999;
+}
+.more {
+	position: fixed;
+	bottom: 50px;
+	right: 30px;
+	width: 150px;
+	height: 63px;
 	z-index: 9999;
 }
