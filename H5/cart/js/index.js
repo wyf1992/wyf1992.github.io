@@ -6,8 +6,6 @@ $(function(){
 		// 设置对齐方式
 		verticalCentered: false,
 		// 设置导航
-		navigation: true,
-		navigationPosition: 'right',
-
+		navigation: true
 	});
 });

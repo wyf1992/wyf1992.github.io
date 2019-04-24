@@ -1,0 +1,21 @@
+.go	{
+	position: fixed;
+	top: 4%;
+	right: 4%;
+	width: 8%;
+
+	z-index: 9999;
+
+}
+.go img, .more img{
+	display: block;
+	width: 100%;
+	
+}
+.more {
+	position: fixed;
+	right: 6%;
+	bottom: 10%;
+	width: 15%;
+	z-index: 9999;
+}
