@@ -21,17 +21,75 @@
 }*/
 .go {
 	position: fixed;
-	top: 10px;
-	right: 10px;
-	width: 101px;
-	height: 101px;
+	top: 30px;
+	right: 30px;
+	width: 100px;
+	height: 100px;
 	z-index: 9999;
 }
 .more {
 	position: fixed;
-	bottom: 50px;
-	right: 30px;
-	width: 150px;
-	height: 63px;
+	bottom: 80px;
+	right: 60px;
 	z-index: 9999;
+	animation: more 0.6s linear infinite alternate;
+}
+
+.content {
+	width: 900px;
+	height: 600px;
+	background-color: rgba(0,0,0,.1);
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -450px;
+}
+
+.section.screen01 {
+	background: url('../images/01-bg.png') no-repeat center bottom;
+}
+
+.screen01 .goods {
+	text-align: center;
+	margin-top: 230px;
+	animation: goods-01 1s linear infinite alternate;
+}
+.screen01 .sofa {
+	position: absolute;
+	left: 230px;
+	top: 150px;
+	animation: sofa-01 1.5s linear infinite alternate;
+
+}
+.screen01 .fly {
+	position: absolute;
+	top: 50px;
+	right: -20px;
+	animation: goods-01 0.8s linear infinite alternate;
+}
+
+
+@keyframes goods-01 {
+	0%{
+		transform: translateY(-10px);
+	}
+	100%{
+		transform: translateY(10px);
+	}
+}
+@keyframes sofa-01 {
+	0%{
+		transform: translateY(-20px);
+	}
+	100%{
+		transform: translateY(20px);
+	}
+}
+@keyframes more {
+	0%{
+		transform: translateY(-15px);
+	}
+	100%{
+		transform: translateY(15px);
+	}
 }
