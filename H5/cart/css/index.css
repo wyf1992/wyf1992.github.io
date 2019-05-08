@@ -34,11 +34,20 @@
 	z-index: 9999;
 	animation: more 0.6s linear infinite alternate;
 }
+@keyframes more {
+	0%{
+		transform: translateY(-15px);
+	}
+	100%{
+		transform: translateY(15px);
+	}
+}
 
+/*第一屏*/
 .content {
 	width: 900px;
 	height: 600px;
-	background-color: rgba(0,0,0,.1);
+	background-color: rgb(0,0,0,0.1);
 	position: absolute;
 	bottom: 0;
 	left: 50%;
@@ -85,11 +94,9 @@
 		transform: translateY(20px);
 	}
 }
-@keyframes more {
-	0%{
-		transform: translateY(-15px);
-	}
-	100%{
-		transform: translateY(15px);
-	}
+
+
+/*第二屏*/
+.section.screen02 {
+	background: url('../images/02-bg.png') no-repeat center bottom;
 }

@@ -8,4 +8,3 @@ $(function(){
 		// 设置导航
 		navigation: true
 	});
-});

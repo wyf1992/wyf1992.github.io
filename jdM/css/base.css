@@ -1,0 +1,55 @@
+/*----reset css----*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	/*取消点击高亮*/
+	tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent;
+} 
+
+body {
+	font-size: 14px;
+	color: #333;
+	font-family: "Microsoft YaHei", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+ul,li {
+	list-style: none;	
+}
+
+input,textarea {
+	outline: none;
+	resize: none;
+	border: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+/*==========common style=======*/
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.clearFix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+[class^="icon-"],[class*=" icon-"] {
+	background-image: url(../images/sprites.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: 200px 200px;
+	background-size: 200px 200px;
+}
